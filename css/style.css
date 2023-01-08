@@ -514,9 +514,11 @@ h3 {
     justify-content: center;
     text-align: start;
 }
-.img-mobile{
+
+.img-mobile {
     display: none;
 }
+
 /* grid eventos */
 .grid5 {
     display: grid;
@@ -931,7 +933,7 @@ span {
 @media (max-width: 320px) {
 
     /* home mobile */
-    .fondo{
+    .fondo {
         height: 100%;
     }
 
