@@ -10,21 +10,17 @@ font-family: 'Tangerine', cursive; */
 /* body y fondos */
 body {
     background-image: url(../assets/img/fondos/home1.jpg);
-    background-position-x: center;
-    background-position-y: center;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-.fondo {
-    height: 600px;
-}
 
 .body-pages {
     background-image: url(../assets/img/fondos/historia1.jpg);
-    background-position-x: center;
-    background-position-y: center;
-    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -224,12 +220,16 @@ h3 {
 }
 
 /* menu home */
-.menu1 {
+.menu1 ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
-    margin-top: 40px;
+    align-items: center;
+}
+
+.menu1 {
+    height: 100px;
 }
 
 .menu1 a {
@@ -566,6 +566,7 @@ h3 {
     text-align: left;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .art2 {
@@ -693,8 +694,9 @@ span {
         height: 80px;
     }
 
-    .fondo {
-        height: 400px;
+    body {
+        background-image: url(../assets/img/fondos/historia1.jpg);
+        background-size: cover;
     }
 
     .menu1 {
@@ -926,15 +928,17 @@ span {
     .form1 div:last-child {
         text-align: center;
     }
+
 }
 
 /* mobile responsive */
 
-@media (max-width: 320px) {
+@media (max-width: 500px) and (min-width:200px) {
 
     /* home mobile */
-    .fondo {
-        height: 100%;
+    body{
+        background-image: url(../assets/img/fondos/historia1.jpg);
+        background-size: cover;
     }
 
     .nav-bar img {
@@ -1255,6 +1259,7 @@ span {
         margin-left: 0;
         text-align: center;
     }
+
 
     /* contacto mobile */
     .grid {
