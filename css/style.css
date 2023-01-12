@@ -936,7 +936,7 @@ span {
 @media (max-width: 500px) and (min-width:200px) {
 
     /* home mobile */
-    body{
+    body {
         background-image: url(../assets/img/fondos/historia1.jpg);
         background-size: cover;
     }
@@ -1041,15 +1041,19 @@ span {
     }
 
     .footer {
+        flex-direction: column;
         height: 30px;
         justify-content: center;
         align-items: center;
     }
-    .footer-pages{
-        height: 200px;
+
+    .footer-pages {
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 200px;
         margin-top: 50px;
+        background: none;
     }
 
 
@@ -1159,11 +1163,6 @@ span {
 
     }
 
-    .footer-pages {
-        justify-content: center;
-        background: none;
-        margin-top: 10px;
-    }
 
     .social-media {
         margin-left: 0;
