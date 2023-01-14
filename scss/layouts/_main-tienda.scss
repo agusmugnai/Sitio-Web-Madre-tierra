@@ -1,0 +1,76 @@
+.title-pages {
+    h1 {
+        text-align: center;
+        height: 200px;
+        font-size: 150px;
+        font-family: $secondary-font;
+        text-decoration: none;
+
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 50px;
+        font-family: $principal-font;
+        padding-left: 40px;
+
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 600px);
+    grid-template-areas:
+        "card1 card2"
+        "card3 card4";
+
+    grid-column-gap: 50px;
+    margin-top: 60px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+    .card1 {
+        grid-area: card1;
+        width: 300px;
+        height: 550px;
+        text-align: center;
+
+        img {
+            border-radius: 8px;
+            box-shadow: 1px 5px 5px black;
+        }
+
+        h4 {
+            border-radius: 5px;
+            height: 40px;
+            width: 200px;
+            background-color: map-get($map: $color, $key: "secundario");
+            font-size: 28px;
+            font-family: $secondary-font;
+            color: map-get($map: $color, $key: "dark");
+            text-align: center;
+        }
+
+
+    }
+
+    .card2 {
+        grid-area: card2;
+        @extend .card1;
+
+    }
+
+    .card3 {
+        grid-area: card3;
+        @extend .card1;
+
+    }
+
+    .card4 {
+        grid-area: card4;
+        @extend .card1;
+
+    }
+}

@@ -1,0 +1,37 @@
+section {
+
+    h1 {
+        font-family: $principal-font;
+        font-size: 270px;
+        text-align: center;
+        text-decoration: underline 3px double map-get($map: $color, $key: "principal");
+    }
+
+    h3 {
+        font-family: $secondary-font;
+        font-size: 70px;
+        font-weight: lighter;
+        text-align: center;
+        letter-spacing: 15px;
+        margin-top: -55px;
+    }
+}
+
+.menu1 {
+    ul {
+        @include flex;
+        height: 200px;
+        justify-content: space-around;
+    }
+
+
+    a {
+        font-family: $secondary-font;
+        font-weight: bolder;
+        color: map-get($map: $color, $key: "dark");
+        font-size: 30px;
+    
+    }
+
+
+}

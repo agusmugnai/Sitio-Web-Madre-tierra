@@ -1,0 +1,67 @@
+.button {
+    ul {
+        @include flex;
+        width: 100%;
+        height: 150px;
+        margin-top: 50px;
+        justify-content: space-evenly;
+        text-align: center;
+
+    }
+
+    li {
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 22%;
+        height: 80px;
+        @include flex;
+        align-content: center;
+    }
+
+
+    a {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: $secondary-font;
+        color: map-get($map: $color, $key: "dark");
+    }
+}
+
+.parallax {
+    background-image: url(../../assets/img/eventos/miel-parallax.jpg);
+    height: 250px;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.art-evento {
+    @include flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    background-color: white;
+
+
+
+    article {
+        width: 40%;
+        height: 700px;
+        font-size: 50px;
+        font-family: $principal-font;
+        color: black;
+
+        border: 2px solid black;
+
+
+    }
+
+    img {
+        box-shadow: 0px 3px 5px white;
+    }
+
+}

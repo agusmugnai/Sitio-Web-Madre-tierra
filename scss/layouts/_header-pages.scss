@@ -1,0 +1,95 @@
+.menu a:hover {
+    text-decoration: underline 2px solid white;
+}
+
+
+.menu {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+    background-color: map-get($map: $color, $key: "principal");
+    top: 80px;
+    left: 0px;
+    z-index: 1;
+    text-align: center;
+    
+
+
+    a {
+        font-size: 30px;
+        font-family: $secondary-font;
+        font-weight: bold;
+        color: map-get($map: $color, $key: "dark");
+    }
+    li{
+        margin-top: 20px;
+    }
+}
+
+.hamb {
+    cursor: pointer;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.hamb-line {
+    background-color: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+    background-color: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+
+.side-menu:checked~.menu {
+    max-height: 100%;
+}
+
+.side-menu:checked~.hamb .hamb-line {
+    background-color: transparent;
+}
+
+.side-menu:checked~.hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.side-menu:checked~.hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+hr {
+    @include flex;
+    display: block;
+    margin-right: 3%;
+    margin-left: auto;
+    border-bottom: 1px solid map-get($map: $color, $key: "principal");
+    width: 10%;
+
+}

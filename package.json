@@ -1,0 +1,19 @@
+{
+  "name": "html-css-mugnai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agusmugnai/proyecto-madre-tierra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agusmugnai/proyecto-madre-tierra/issues"
+  },
+  "homepage": "https://github.com/agusmugnai/proyecto-madre-tierra#readme"
+}
