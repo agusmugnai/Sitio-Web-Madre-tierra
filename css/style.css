@@ -1,16 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Nanum+Myeongjo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap");
-.parallax {
-  background-image: url(../../assets/img/fondos/home1.jpg);
-  height: 300px;
-  width: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -193,6 +183,23 @@ section h3 {
   padding-left: 40px;
 }
 
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.intro p {
+  width: 70%;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  color: hsl(0deg, 0%, 0%);
+  margin-top: 20px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 400px);
@@ -215,14 +222,22 @@ section h3 {
   box-shadow: 1px 5px 5px black;
 }
 .grid-container .card1 h4, .grid-container .card4 h4, .grid-container .card3 h4, .grid-container .card2 h4 {
-  border-radius: 5px;
   height: 40px;
   width: 200px;
-  background-color: #56A118;
-  font-size: 28px;
-  font-family: "Raleway", sans-serif;
+  border-radius: 5px;
+  background-color: #608b04;
+  margin: 10px auto 0 auto;
+  font-size: 35px;
+  font-family: "Ephesis", cursive;
   color: hsl(0deg, 0%, 0%);
-  text-align: center;
+}
+.grid-container .card1 article, .grid-container .card4 article, .grid-container .card3 article, .grid-container .card2 article {
+  width: 200px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  background-color: darkslategray;
 }
 .grid-container .card2 {
   grid-area: card2;
@@ -297,8 +312,38 @@ section h3 {
   color: hsl(0deg, 0%, 0%);
 }
 
-.parallax {
-  background-image: url(../assets/img/eventos/miel-parallax.jpg);
+.parallax1 {
+  background-image: url(../../assets/img/eventos/miel-parallax.jpg);
+  height: 250px;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url(../../assets/img/eventos/mermelada-parallax.jpg);
+  height: 250px;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax3 {
+  background-image: url(../../assets/img/eventos/veg-parallax.jpg);
+  height: 250px;
+  width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax4 {
+  background-image: url(../../assets/img/eventos/ecology-parallax.jpg);
   height: 250px;
   width: 100%;
   background-attachment: fixed;
@@ -329,6 +374,84 @@ section h3 {
 }
 .art-evento img {
   box-shadow: 0px 3px 5px white;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 60px;
+  background: none;
+}
+.form-container input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto 15px auto;
+  width: 350px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid hsl(0deg, 0%, 0%);
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.form-container p {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+}
+.form-container textarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 150px;
+  margin: 15px auto;
+  border: 1px solid hsl(0deg, 0%, 0%);
+  outline: none;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.form-container :nth-child(4) {
+  margin-top: 40px;
+}
+.form-container .check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.form-container .check input {
+  width: 20px;
+  height: 20px;
+}
+.form-container .check span {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.form-container .form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.form-container .form-buttons input {
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 30px;
+  background: none;
+  border: 1px solid black;
 }
 
 footer {

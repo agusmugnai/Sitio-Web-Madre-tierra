@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contacto </title>
     <link rel="shortcut icon" href="../assets/img/iconos/logoblanco.png" type="image/x-icon">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -15,95 +17,92 @@
 <body>
     <header>
         <nav class="nav-bar">
-
             <div class="link1">
                 <li><a href="../index.html"><img src="../assets/img/iconos/logoblanco.png" alt="logo de la marca"></a>
                 </li>
 
-            </div>
-            <div class="link2">
-                <li><a href="#"><img src="../assets/img/iconos/globe.png" alt="idioma"></a>
-                </li>
-                <li><a href="#"><img src="../assets/img/iconos/login.png" alt="login"></a>
-                </li>
-                <li><a href="#"><img src="../assets/img/iconos/dolar.png" alt="moneda"></a></li>
-                <li><a href="#"><img src="../assets/img/iconos/shop.png" alt="compras"></a></li>
-            </div>
-
-           
                 <input type="checkbox" id="side-menu" class="side-menu">
                 <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
 
                 <ul class="menu">
-                    <li><a href="./tienda.html"> TIENDA </a></li>
+                    <li><a href="#"> TIENDA </a></li>
                     <li><a href="./historia.html"> NOSOTROS </a></li>
                     <li><a href="./eventos.html"> EVENTOS </a></li>
-                    <li><a href="#"> CONTACTO </a></li>
+                    <li><a href="./contacto.html"> CONTACTO </a></li>
                 </ul>
-            
+            </div>
+            <div class="link2">
+                <li><a href=""><img src="../assets/img/iconos/globe.png" alt="idioma"></a>
+                </li>
+                <li><a href=""><img src="../assets/img/iconos/shop.png" alt="compras"></a></li>
+
+            </div>
         </nav>
-    </header>
-
-
-
-
-
-    <main>
-        <section class="tienda">
-            <h1 class="titulos"> Contáctanos </h1>
-            <h3 class="h3"> ECO-ALIMENTOS </h3>
-        </section>
-
+        <hr>
         <div>
-            <hr class="linea-contact">
-            <hr class="linea-contact">
+            <ul class="social-media">
+                <li><a href=""><img src="../assets/img/iconos/facebook.png" alt="facebook"></a></li>
+                <li><a href=""><img src="../assets/img/iconos/instagram.png" alt="instagram"></a></li>
+                <li><a href=""><img src="../assets/img/iconos/twitter.png" alt="twitter"></a></li>
+            </ul>
         </div>
 
+    </header>
 
-        <section class="grid">
-            <form class="form1" action="" method="post">
+    <main>
+        <section class="title-pages">
+            <h1> Contáctanos </h1>
+            <h3> eco-alimentos </h3>
+        </section>
+
+        <section class="form-container">
+            <form class="form-casillas" action="" method="post">
 
                 <div>
                     <label for="nombre">
-                        <span> Nombre </span>
-                        <input class="box" type="text" name="nombre" id="nombre" required>
+                        <p> Nombre* </p>
+                        <input type="text" name="nombre" id="nombre" required>
                     </label>
                 </div>
 
                 <div>
                     <label for="apellido">
-                        <span> Apellido </span>
-                        <input class="box" type="text" name="apellido" id="apellido" required>
+                        <p> Apellido* </p>
+                        <input type="text" name="apellido" id="apellido" required>
                     </label>
                 </div>
 
                 <div>
                     <label for="e-mail">
-                        <span> e-mail </span>
-                        <input class="box" type="email" name="e-mail" id="e-mail" required>
+                        <p> e-mail* </p>
+                        <input type="email" name="e-mail" id="e-mail" required>
                     </label>
                 </div>
 
                 <div>
                     <label for="comentario">
-                        <span> Deje su comentario </span>
-                        <textarea class="box-coment" name="comentario" id="comentario" required></textarea>
+                        <p> Deja tu comentario </p>
+                        <textarea name="comentario" id="comentario"></textarea>
                     </label>
                 </div>
-            </form>
 
-            <form class="form2" action="" method="post">
-                <div>
-                    <input type="checkbox" id="acepta" name="acepta" value="1" required class="check-box">
-                    <label for="acepta"> <span> Acepto términos y condiciones</span> </label>
+                <div class="check">
+                    <input type="checkbox" id="acepta" name="acepta" value="1" required>
+                    <label for="acepta"> <span>Acepto términos y condiciones*</span></label>
                 </div>
 
-                <div class="button">
+                <div class="form-buttons">
                     <input class="submit" type="submit">
                     <input class="reset" type="reset">
                 </div>
             </form>
 
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.885201944457!2d10.3323677!3d44.823903300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47806a9a52e0859b%3A0xf282efe57b81a7f8!2sVia%20del%20Popolo%2C%2027%2C%2043122%20Parma%20PR%2C%20Italia!5e0!3m2!1sit!2sar!4v1673796656022!5m2!1sit!2sar"
+                    width="400" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
     </main>
@@ -111,21 +110,10 @@
 
 
     <footer>
-        <section class="footer-pages">
-
-            <div>
-                <ul class="social-media">
-                    <li><a href=""><img src="../assets/img/iconos/facebook.png" alt="facebook"></a></li>
-                    <li><a href=""><img src="../assets/img/iconos/instagram.png" alt="instagram"></a></li>
-                    <li><a href=""><img src="../assets/img/iconos/twitter.png" alt="twitter"></a></li>
-                </ul>
-            </div>
-
-
+        <section>
             <div class="address">
-                <p> -Via del popolo 27. Lascio. Italia- </p>
-                <hr class="linea-x-footer">
-                <ul class="cookies">
+                <p> -Via del Popolo 27. Lascio. Italia- </p>
+                <ul>
                     <li><a href=""> cookies </a></li>
                     <li><a href=""> privacy </a></li>
                     <li><a href=""> políticas de envío </a></li>
@@ -134,7 +122,6 @@
             </div>
         </section>
     </footer>
-
 </body>
 
 </html>

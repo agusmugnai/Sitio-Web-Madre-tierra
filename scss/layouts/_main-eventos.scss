@@ -27,16 +27,26 @@
     }
 }
 
-.parallax {
+.parallax1 {
     background-image: url(../../assets/img/eventos/miel-parallax.jpg);
-    height: 250px;
-    width: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include parallax;
 }
 
+.parallax2{
+    background-image: url(../../assets/img/eventos/mermelada-parallax.jpg);
+    @include parallax;
+}
+
+.parallax3{
+    background-image: url(../../assets/img/eventos/veg-parallax.jpg);
+    @include parallax;
+}
+
+.parallax4{
+    background-image: url(../../assets/img/eventos/ecology-parallax.jpg);
+    @include parallax;
+
+}
 .art-evento {
     @include flex;
     align-items: center;
@@ -54,10 +64,7 @@
         font-size: 50px;
         font-family: $principal-font;
         color: black;
-
         border: 2px solid black;
-
-
     }
 
     img {

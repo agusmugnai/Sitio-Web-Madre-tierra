@@ -4,9 +4,8 @@
     justify-content: center;
     align-items: center;
 }
-.parallax{
-    background-image: url(../../assets/img/fondos/home1.jpg);
-    height: 300px;
+@mixin parallax{
+    height: 250px;
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
