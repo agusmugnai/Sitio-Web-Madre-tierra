@@ -313,7 +313,7 @@ section h3 {
 }
 
 .parallax1 {
-  background-image: url(../../assets/img/eventos/miel-parallax.jpg);
+  background-image: url(../assets/img/eventos/miel-parallax.jpg);
   height: 250px;
   width: 100%;
   background-attachment: fixed;
@@ -323,7 +323,7 @@ section h3 {
 }
 
 .parallax2 {
-  background-image: url(../../assets/img/eventos/mermelada-parallax.jpg);
+  background-image: url(../assets/img/eventos/mermelada-parallax.jpg);
   height: 250px;
   width: 100%;
   background-attachment: fixed;
@@ -333,7 +333,7 @@ section h3 {
 }
 
 .parallax3 {
-  background-image: url(../../assets/img/eventos/veg-parallax.jpg);
+  background-image: url(../assets/img/eventos/veg-parallax.jpg);
   height: 250px;
   width: 100%;
   background-attachment: fixed;
@@ -343,7 +343,7 @@ section h3 {
 }
 
 .parallax4 {
-  background-image: url(../../assets/img/eventos/ecology-parallax.jpg);
+  background-image: url(../assets/img/eventos/ecology-parallax.jpg);
   height: 250px;
   width: 100%;
   background-attachment: fixed;
