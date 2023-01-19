@@ -1,29 +1,61 @@
 .familia {
     margin-top: 50px;
+
     img {
         box-shadow: 0px 4px 5px black;
         border-radius: 10px;
+
     }
-     .art{
-       @include flex;  
-       background-color: map-get($map: $color, $key: "opacity"); 
-       border: 3px solid map-get($map: $color, $key: "principal");
-       width: 90%;
-       height: 300px;
-       margin: 40px auto 40px auto;
+
+    .art {
+      @include flex;
+
+        background-color: map-get($map: $color, $key: "opacity");
+        border: 3px solid map-get($map: $color, $key: "principal");
+        width: 90%;
+        height: 300px;
+        margin: 40px auto 40px auto;
+
+
     }
+
     article {
+       
         font-size: 20px;
         font-family: $secondary-font;
-        width: 70%;
-        
-        color:white;
-        align-items: center;
+        width: 80%;
+        color: white;
+        text-align: center;
+       
+
+        p:nth-child(3) {
+            margin-top: 40px;
+            font-size: 60px;
+            font-family: $principal-font;
+
+        }
+
+        p:last-child {
+            font-size: 30px;
+            font-family: $secondary-font;
+            margin-top: 20px
+        }
     }
-    .fam-img {
+
+    .modulo {
         @include flex;
         align-items: flex-end;
-        gap: 50px;
+        gap: 80px;
+        text-align: center;
+
+        p {
+            font-size: 30px;
+            font-family: $principal-font;
+            color: black;
+        }
     }
-   
+
+    .bloque {
+        display: block;
+    }
 }

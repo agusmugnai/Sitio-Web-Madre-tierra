@@ -6,8 +6,14 @@
         margin-top: 50px;
         justify-content: space-evenly;
         text-align: center;
-
+     :hover{
+        cursor: pointer;
+        background-color: rgb(182, 86, 86);
+        
+       }
+        
     }
+    
 
     li {
         border: 2px solid black;
@@ -16,6 +22,9 @@
         height: 80px;
         @include flex;
         align-content: center;
+        background-color: map-get($map: $color, $key: "secundario");
+       
+        
     }
 
 
@@ -24,7 +33,9 @@
         font-weight: bold;
         font-family: $secondary-font;
         color: map-get($map: $color, $key: "dark");
+       
     }
+
 }
 
 .parallax1 {
@@ -32,39 +43,39 @@
     @include parallax;
 }
 
-.parallax2{
+.parallax2 {
     background-image: url(../../assets/img/eventos/mermelada-parallax.jpg);
     @include parallax;
 }
 
-.parallax3{
+.parallax3 {
     background-image: url(../../assets/img/eventos/veg-parallax.jpg);
     @include parallax;
 }
 
-.parallax4{
+.parallax4 {
     background-image: url(../../assets/img/eventos/ecology-parallax.jpg);
     @include parallax;
 
 }
+
 .art-evento {
     @include flex;
-    align-items: center;
     gap: 50px;
-    width: 100%;
     height: 800px;
-    justify-content: center;
-    background-color: white;
+    text-align: start;
 
 
 
     article {
+        @include flex;
+        flex-direction: column;
         width: 40%;
         height: 700px;
         font-size: 50px;
         font-family: $principal-font;
         color: black;
-        border: 2px solid black;
+
     }
 
     img {
