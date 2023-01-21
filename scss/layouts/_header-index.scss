@@ -1,3 +1,6 @@
+header{
+    background-color: map-get($map: $color, $key: "crem");
+}
 .img-home {
     display: none;
 }
@@ -5,17 +8,26 @@
 .nav-bar {
     @include flex;
     justify-content: space-between;
-    margin: 20px 20px 0 20px;
+    padding: 20px 20px 0 20px;
+margin-bottom: 0;
+
 
     .link2 {
         @include flex;
         gap: 20px;
         margin-right: 50px;
+       
     }
 
     .link1 {
         @extend .link2;
+
     }
+}
+
+.cursor :hover {
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px black;
 }
 
 
@@ -23,6 +35,7 @@
     @include flex;
     justify-content: flex-end;
     gap: 20px;
-    margin: 15px 50px 0 0;
-    
+    padding: 15px 50px 10px 0;
+
+
 }

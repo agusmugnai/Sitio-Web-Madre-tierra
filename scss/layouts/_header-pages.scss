@@ -4,29 +4,30 @@
 
 
 .menu {
-    width: 20%;
-    height: 100%;
+    @include flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 10%;
     position: fixed;
     overflow: hidden;
     max-height: 0;
     transition: max-height .5s ease-out;
-    background-color: map-get($map: $color, $key: "principal");
+    background-color: map-get($map: $color, $key: "opacity");
     top: 80px;
-    left: 0px;
+    left: 80px;
     z-index: 1;
     text-align: center;
-    
-
 
     a {
         font-size: 30px;
         font-family: $secondary-font;
         font-weight: bold;
-        color: map-get($map: $color, $key: "dark");
+        color: white;
+
     }
-    li{
-        margin-top: 20px;
-    }
+
+
+
 }
 
 .hamb {
@@ -89,7 +90,7 @@ hr {
     display: block;
     margin-right: 3%;
     margin-left: auto;
-    border-bottom: 1px solid map-get($map: $color, $key: "principal");
-    width: 10%;
+    border-bottom: 1px solid map-get($map: $color, $key: "dark");
+    width: 130px;
 
 }

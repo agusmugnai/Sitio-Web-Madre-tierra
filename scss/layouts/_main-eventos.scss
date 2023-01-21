@@ -8,21 +8,18 @@
         text-align: center;
      :hover{
         cursor: pointer;
-        background-color: rgb(182, 86, 86);
-        
        }
         
     }
     
 
     li {
-        border: 2px solid black;
         border-radius: 10px;
         width: 22%;
         height: 80px;
         @include flex;
         align-content: center;
-        background-color: map-get($map: $color, $key: "secundario");
+        background-color:rgba(220, 20, 60, 0.555);
        
         
     }
@@ -39,22 +36,22 @@
 }
 
 .parallax1 {
-    background-image: url(../../assets/img/eventos/miel-parallax.jpg);
+    background-image: url(../assets/eventos/miel-parallax.jpg);
     @include parallax;
 }
 
 .parallax2 {
-    background-image: url(../../assets/img/eventos/mermelada-parallax.jpg);
+    background-image: url(../assets/eventos/mermelada-parallax.jpg);
     @include parallax;
 }
 
 .parallax3 {
-    background-image: url(../../assets/img/eventos/veg-parallax.jpg);
+    background-image: url(../assets/eventos/veg-parallax.jpg);
     @include parallax;
 }
 
 .parallax4 {
-    background-image: url(../../assets/img/eventos/ecology-parallax.jpg);
+    background-image: url(../assets/eventos/ecology-parallax.jpg);
     @include parallax;
 
 }

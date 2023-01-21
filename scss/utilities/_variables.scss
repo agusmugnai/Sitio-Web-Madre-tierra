@@ -2,8 +2,10 @@ $principal-font: 'Ephesis', cursive;
 $secondary-font: 'Raleway', sans-serif;
 
 $color:(
-    "principal": #A33201,
-    "secundario": #608b04,
-    "dark": hsl(0, 0%, 0%),
+    "principal": #0db3c9,
+    "secundario": #7fb609,
+    "terciario": rgb(122, 167, 197),
+    "dark": black,
     "opacity": rgba(0, 0, 0, 0.8),
+    "crem": rgb(243, 229, 167),
     )

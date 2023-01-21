@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Nosotros | Madre tierra </title>
-    <link rel="shortcut icon" href="../assets/img/iconos/logoblanco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/iconos/logoblanco.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -17,7 +17,8 @@
     <header>
         <nav class="nav-bar">
             <div class="link1">
-                <li><a href="../index.html"><img src="../assets/img/iconos/logoblanco.png" alt="logo de la marca"></a>
+                <li class="cursor"><a href="../index.html"><img src="../assets/iconos/logoblanco.png"
+                            alt="logo de la marca"></a>
                 </li>
 
                 <input type="checkbox" id="side-menu" class="side-menu">
@@ -31,18 +32,18 @@
                 </ul>
             </div>
             <div class="link2">
-                <li><a href=""><img src="../assets/img/iconos/globe.png" alt="idioma"></a>
+                <li><a href="#"><img src="../assets/iconos/globe.png" alt="idioma"></a>
                 </li>
-                <li><a href=""><img src="../assets/img/iconos/shop.png" alt="compras"></a></li>
+                <li><a href="#"><img src="../assets/iconos/shop.png" alt="compras"></a></li>
 
             </div>
         </nav>
         <hr>
         <div>
             <ul class="social-media">
-                <li><a href=""><img src="../assets/img/iconos/facebook.png" alt="facebook"></a></li>
-                <li><a href=""><img src="../assets/img/iconos/instagram.png" alt="instagram"></a></li>
-                <li><a href=""><img src="../assets/img/iconos/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="../assets/iconos/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="../assets/iconos/instagram.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="../assets/iconos/twitter.png" alt="twitter"></a></li>
             </ul>
         </div>
 
@@ -59,11 +60,20 @@
         <section class="familia">
             <div class="modulo">
                 <div class="bloque">
-                    <img src="../assets/img/historia/antigua.jpg" alt="fundadora">
+                    <picture>
+                        <source media="(min-width: 500px" srcset="../assets/historia/antigua.jpg">
+                        <source media="(min-width: 200px" srcset="../assets/historia/antigua-mobile.jpg">
+                        <img src="../assets/historia/antigua-mobile.jpg" alt="fundadora">
+                    </picture>
                     <p>Fundadora Nonna Cesira</p>
                 </div>
                 <div class="bloque">
-                    <img src="../assets/img/historia/familia.jpg" alt="familia">
+                    <picture>
+                        <source media="(min-width: 500px" srcset="../assets/historia/familia.jpg">
+                        <source media="(min-width: 200px" srcset="../assets/historia/familia-mobile.jpg">
+                        <img src="../assets/historia/familia.jpg" alt="familia">
+                    </picture>
+
                     <p>La familia Mancini, tataranietos de Cesira, <br> dueños actuales de la empresa.</p>
                 </div>
 
@@ -73,16 +83,15 @@
                     <strong>Madre tierra</strong> surge en la provincia de Lascio-Italia- allá por el año 1892, fundada
                     por Nonna Cesira en su propia huerta detrás de su casa. Comienza, con el propósito de dar de comer a
                     sus 8 hijos dadas las duras condiciones de vida de aquel entonces.
-                    Con el paso del tiempo los pilares más estables sobre alimentación, en la que ella y su familia
+                    <br> Con el paso del tiempo los pilares más estables sobre alimentación, en la que ella y su familia
                     creyeron y valoraron fue encontrar la manera más sana posible de consumir cualquier alimento que la
-                    tierra tenía para ofrecerles.
+                    tierra tenía para ofrecerles.<br>
                     Es así como pasados los años, esa idea se convierte en la empresa que es hoy, con el objetivo de
                     fomentar la alimentación cuidada y <strong>reducir la huella de carbono al cultivar
-                        eco-alimentos.</strong>
+                        eco-alimentos.</strong><br>
                     Nuestra misión es la de lograr reemplazar la manera en que se consumen frutas, verduras y mieles
                     tratadas químicamente por aquellos que solo están tratados con amor y dedicación, haciendo posible
-                    una <strong>alimentación sana y variada.</strong>
-
+                    una <strong>alimentación sana y variada.</strong><br>
                     Nuestra propuesta es la de “contagiar” a otras personas a consumir alimentos libres de pesticidas y
                     materia química que daña la salud y generar <strong>cambios en el estilo de vida</strong> de cada
                     uno, así como lo hizo Nonna Cesira tanto tiempo atrás.
@@ -91,7 +100,12 @@
 
             <div class="modulo">
                 <div class="bloque">
-                    <img src="../assets/img/historia/agroindustria.jpg" alt="planta de producción">
+                    <picture>
+                        <source media="(min-width: 500px" srcset="../assets/historia/agroindustria.jpg">
+                        <source media="(min-width: 200px" srcset="../assets/historia/agroindustria-mobile.jpg">
+                        <img src="../assets/historia/agroindustria.jpg" alt="planta de producción">
+                    </picture>
+
                     <p>Planta de producción en Parma.</p>
                 </div>
             </div>
@@ -103,17 +117,27 @@
                         impacto positivo en el mundo.</strong>
 
                     <p>Nuestros valores</p>
-                    <p>* Sostenibilidad * Consciencia * Integridad * Positividad *</p>
+                    <p>*Sostenibilidad* *Consciencia* *Integridad* *Positividad*</p>
                 </article>
             </div>
 
             <div class="modulo">
                 <div class="bloque">
-                    <img src="../assets/img/historia/persona-cosechando.jpg" alt="hombre cosechando">
+                    <picture>
+                        <source media="(min-width: 500px" srcset="../assets/historia/persona-cosechando.jpg">
+                        <source media="(min-width: 200px" srcset="../assets/historia/persona-cosechando-mobile.jpg">
+                        <img src="../assets/historia/persona-cosechando.jpg" alt="hombre cosechando">
+                    </picture>
+
                     <p>Marco Mancini.</p>
                 </div>
                 <div class="bloque">
-                    <img src="../assets/img/historia/pareja-cosechando.jpg" alt="pareja cosechando">
+                    <picture>
+                        <source media="(min-width: 500px" srcset="../assets/historia/pareja-cosechando.jpg">
+                        <source media="(min-width: 200px" srcset="../assets/historia/pareja-cosechando-mobile.jpg">
+                        <img src="../assets/historia/pareja-cosechando.jpg" alt="pareja cosechando">
+                    </picture>
+
                     <p>Allegados a la familia <br> comprobando la calidad de los alimentos.</p>
                 </div>
             </div>
@@ -138,10 +162,10 @@
             <div class="address">
                 <p> -Via del Popolo 27. Lascio. Italia- </p>
                 <ul>
-                    <li><a href=""> cookies </a></li>
-                    <li><a href=""> privacy </a></li>
-                    <li><a href=""> políticas de envío </a></li>
-                    <li><a href=""> envío </a></li>
+                    <li><a href="#"> cookies </a></li>
+                    <li><a href="#"> privacy </a></li>
+                    <li><a href="#"> políticas de envío </a></li>
+                    <li><a href="#"> envío </a></li>
                 </ul>
             </div>
         </section>
