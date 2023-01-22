@@ -680,6 +680,9 @@ footer a {
 }
 /* mobile */
 @media (min-width: 200px) and (max-width: 500px) {
+  .cursor:hover {
+    display: none;
+  }
   .nav-bar {
     padding: 5px 5px 0 5px;
   }
@@ -773,6 +776,9 @@ footer a {
     margin-top: 410px;
     opacity: 1;
   }
+  .grid-container .text h4 {
+    font-weight: lighter;
+  }
   .grid-container .card1:hover, .grid-container .card2:hover, .grid-container .card3:hover, .grid-container .card4:hover {
     cursor: none;
     display: none;
@@ -830,7 +836,7 @@ footer a {
   .parallax2,
   .parallax3,
   .parallax4 {
-    height: 50px;
+    display: none;
   }
   .art-evento {
     display: block;

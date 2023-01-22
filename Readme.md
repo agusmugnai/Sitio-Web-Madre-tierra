@@ -10,8 +10,10 @@
 -CSS
 -Affinity Designer
 -Node.js
+
 ##Paleta de colores
 https://colorhunt.co/palette/9fc088e8c07dcc704b614124
+
 ##Tipografías utililzadas
 https://fonts.google.com/specimen/Raleway
 https://fonts.google.com/specimen/Ephesis
