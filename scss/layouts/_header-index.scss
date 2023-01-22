@@ -1,6 +1,7 @@
-header{
-    background-color: map-get($map: $color, $key: "crem");
+header {
+    background-color: map-get($map: $color, $key: "verde");
 }
+
 .img-home {
     display: none;
 }
@@ -9,14 +10,14 @@ header{
     @include flex;
     justify-content: space-between;
     padding: 20px 20px 0 20px;
-margin-bottom: 0;
+    margin-bottom: 0;
 
 
     .link2 {
         @include flex;
         gap: 20px;
         margin-right: 50px;
-       
+
     }
 
     .link1 {
@@ -25,9 +26,9 @@ margin-bottom: 0;
     }
 }
 
-.cursor :hover {
+.cursor:hover {
     border-radius: 5px;
-    box-shadow: 3px 3px 8px black;
+    box-shadow: 3px 3px 8px map-get($map: $color, $key: "nero");
 }
 
 

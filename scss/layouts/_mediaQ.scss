@@ -1,6 +1,6 @@
 /* tablet */
 @media (min-width: 500px) and (max-width: 900px) {
-    .cursor :hover {
+    .cursor:hover {
         display: none;
     }
 
@@ -15,7 +15,7 @@
         }
     }
 
-    .menu1 ul :hover {
+    .menu1 ul:hover {
         cursor: none;
         transform: scale(0);
 
@@ -48,7 +48,8 @@
     }
 
     .grid-container {
-        margin-top: 0px;
+        margin-top: -100px;
+        margin-bottom: 150px;
         grid-template-columns: 400px;
         grid-template-rows: repeat(4, 700px);
         grid-template-areas:
@@ -56,40 +57,16 @@
             "card2"
             "card3"
             "card4";
+.text{
+height: 230px;
+margin-top:410px;
+opacity: 1;
+}
+.card1:hover{
+    cursor: none;
+    display: none;
+}
 
-
-        .card1,
-        .card2,
-        .card3,
-        .card4 {
-            position: static;
-            height: 650px;
-
-        }
-
-        .card1:hover {
-            display: none;
-            cursor: none;
-        }
-
-        :hover .text {
-            display: none;
-            cursor: none;
-        }
-
-        .text {
-            position: static;
-            visibility: visible;
-            opacity: 1;
-            text-align: center;
-
-            h4,
-            article {
-                color: black;
-                margin-top: 10px;
-
-            }
-        }
     }
 
     article {
@@ -97,27 +74,25 @@
     }
 
     .button {
-        ul:hover {
-            display: none;
-            cursor: none;
-        }
-
         ul {
             height: 100px;
             margin-top: 10px;
+
+            &:hover {
+                display: none;
+                cursor: none;
+            }
         }
 
+
         li {
-            background: none;
-            border: 1.5px solid map-get($map: $color, $key: "crem");
+            border: 2px;
             width: 22%;
             height: 60px;
-            background-color: map-get($map: $color, $key: "opacity");
         }
 
         a {
             font-size: 16px;
-            color: white;
             font-weight: lighter;
 
         }
@@ -167,7 +142,7 @@
 
         a {
             font-size: 20px;
-            color: white;
+            color:map-get($map: $color, $key: "bianco");
         }
 
     }
@@ -188,8 +163,26 @@
             margin-right: 10px;
         }
 
-        .cursor :hover {
+        .cursor:hover {
             display: none;
+        }
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30%;
+        top: 95px;
+        left: 0;
+        background-color: map-get($map: $color, $key: "nero");
+
+        a {
+            font-size: 20px;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 
@@ -206,7 +199,7 @@
     section {
         h1 {
             font-size: 70px;
-            text-decoration: underline 1px double map-get($map: $color, $key: "dark");
+            text-decoration: underline 1px double map-get($map: $color, $key: "nero");
         }
 
         h3 {
@@ -217,8 +210,7 @@
         }
     }
 
-    .menu1 ul :hover {
-        cursor: none;
+    .menu1 ul:hover {
         transform: scale(0);
 
     }
@@ -238,13 +230,13 @@
 
         img {
             border-radius: 10px;
-            box-shadow: 0px 8px 6px map-get($map: $color, $key: "dark");
+            box-shadow: 0px 8px 6px map-get($map: $color, $key: "nero");
         }
 
         h4 {
             font-size: 30px;
             font-family: $secondary-font;
-            color: map-get($map: $color, $key: "dark");
+            color: map-get($map: $color, $key: "nero");
             text-align: center;
             background-color: map-get($map: $color, $key: "crem");
             border-radius: 45px;
@@ -267,7 +259,8 @@
     }
 
     .grid-container {
-        margin-top: 0px;
+        margin-top: -130px;
+        margin-bottom: 150px;
         grid-template-columns: 400px;
         grid-template-rows: repeat(4, 700px);
         grid-template-areas:
@@ -277,44 +270,21 @@
             "card4";
 
 
-        .card1,
-        .card2,
-        .card3,
-        .card4 {
-            position: static;
-            height: 650px;
-
-        }
-
-        .card1:hover {
-            display: none;
-            cursor: none;
-        }
-
-        :hover .text {
-            display: none;
-            cursor: none;
-        }
-
-        .text {
-            position: static;
-            visibility: visible;
-            opacity: 1;
-            text-align: center;
-
-            h4,
-            article {
-                color: black;
-                margin-top: 10px;
-
-            }
-        }
+            .text{
+                height: 230px;
+                margin-top:410px;
+                opacity: 1;
+                }
+                .card1:hover{
+                    cursor: none;
+                    display: none;
+                }
     }
 
     .title-pages {
         h1 {
             font-size: 70px;
-            text-decoration: underline 1px double map-get($map: $color, $key: "dark");
+            text-decoration: underline 1px double map-get($map: $color, $key: "nero");
             height: 70px;
 
         }
@@ -364,28 +334,20 @@
     }
 
     .button {
-        ul:hover {
-            display: none;
-            cursor: none;
-        }
-
         ul {
             height: 70px;
             margin-top: 10px;
         }
 
         li {
-            background: none;
             border: 1px solid map-get($map: $color, $key: "crem");
             width: 25%;
             height: 60px;
-            background-color: map-get($map: $color, $key: "opacity");
 
         }
 
         a {
-            font-size: 11px;
-            color: white;
+            font-size: 12px;
             font-weight: lighter;
         }
 
@@ -409,7 +371,7 @@
             margin: 0 auto;
             width: 80%;
             font-size: 25px;
-            height: 350px;
+            height:100%;
         }
     }
 
@@ -419,14 +381,18 @@
         input {
             width: 250px;
         }
-        textarea{
-            width: 320px;
+
+        textarea {
+            width: 300px;
             height: 150px;
         }
     }
+
     .google-maps {
+        width: 320px;
         height: 200px;
         margin-bottom: 30px;
     }
+
 
 }

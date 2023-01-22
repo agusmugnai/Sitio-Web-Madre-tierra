@@ -1,5 +1,5 @@
 .menu a:hover {
-    text-decoration: underline 2px solid white;
+    text-decoration: underline 2px solid map-get($map: $color, $key: "bianco");
 }
 
 
@@ -11,8 +11,8 @@
     position: fixed;
     overflow: hidden;
     max-height: 0;
-    transition: max-height .5s ease-out;
-    background-color: map-get($map: $color, $key: "opacity");
+    transition: max-height .5s ease-in-out;
+    background-color:map-get($map: $color, $key: "opacity");
     top: 80px;
     left: 80px;
     z-index: 1;
@@ -22,7 +22,7 @@
         font-size: 30px;
         font-family: $secondary-font;
         font-weight: bold;
-        color: white;
+        color: map-get($map: $color, $key: "bianco");
 
     }
 
@@ -37,7 +37,7 @@
 }
 
 .hamb-line {
-    background-color: black;
+    background-color: map-get($map: $color, $key: "nero");
     display: block;
     height: 2px;
     position: relative;
@@ -46,7 +46,7 @@
 
 .hamb-line::before,
 .hamb-line::after {
-    background-color: black;
+    background-color:map-get($map: $color, $key: "nero");
     content: '';
     display: block;
     height: 100%;
@@ -90,7 +90,7 @@ hr {
     display: block;
     margin-right: 3%;
     margin-left: auto;
-    border-bottom: 1px solid map-get($map: $color, $key: "dark");
+    border-bottom: 1px solid map-get($map: $color, $key: "nero");
     width: 130px;
 
 }

@@ -4,7 +4,7 @@ section {
         font-family: $principal-font;
         font-size: 270px;
         text-align: center;
-        text-decoration: underline 3px double map-get($map: $color, $key: "dark");
+        text-decoration: underline 3px double map-get($map: $color, $key: "nero");
     }
 
     h3 {
@@ -22,18 +22,17 @@ section {
         @include flex;
         height: 200px;
         justify-content: space-around;
-        
-        :hover {
-            transform: scale(1.2);
-            text-decoration: underline 1px solid black;
-        }
     }
 
+    li:hover {
+        transform: scale(1.2);
+        text-decoration: underline 1px solid map-get($map: $color, $key: "nero");
+    }
 
     a {
         font-family: $secondary-font;
         font-weight: bolder;
-        color: map-get($map: $color, $key: "dark");
+        color: map-get($map: $color, $key: "nero");
         font-size: 30px;
 
     }

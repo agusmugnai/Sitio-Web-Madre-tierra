@@ -11,7 +11,7 @@
         height: 50px;
         border: none;
         outline: none;
-        border-bottom: 1px solid map-get($map: $color, $key: "dark");
+        border-bottom: 1px solid map-get($map: $color, $key: "nero");
         font-size: 18px;
         font-family: $secondary-font;
         font-weight: bold;
@@ -29,14 +29,14 @@
         width: 350px;
         height: 150px;
         margin: 15px auto;
-        border: 1px solid map-get($map: $color, $key: "dark");
+        border: 1px solid map-get($map: $color, $key: "nero");
         outline: none;
         font-size: 18px;
         font-family: $secondary-font;
         font-weight: bold;
     }
 
-    :nth-child(4) {
+    &:nth-child(4) {
         margin-top: 40px;
     }
 
@@ -67,7 +67,7 @@
             font-family: $secondary-font;
             border-radius: 30px;
             background: none;
-            border: 1px solid black;
+            border: 1px solid map-get($map: $color, $key: "nero");
         }
     }
     

@@ -16,7 +16,7 @@ a {
 }
 
 header {
-  background-color: rgb(243, 229, 167);
+  background-color: #9FC088;
 }
 
 .img-home {
@@ -42,7 +42,7 @@ header {
   gap: 20px;
   margin-right: 50px;
 }
-.cursor :hover {
+.cursor:hover {
   border-radius: 5px;
   box-shadow: 3px 3px 8px black;
 }
@@ -74,7 +74,7 @@ header {
   position: fixed;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.8);
   top: 80px;
   left: 80px;
@@ -180,7 +180,7 @@ section h3 {
   height: 200px;
   justify-content: space-around;
 }
-.menu1 ul :hover {
+.menu1 li:hover {
   transform: scale(1.2);
   text-decoration: underline 1px solid black;
 }
@@ -216,7 +216,7 @@ section h3 {
   width: 90%;
   height: 500px;
   border-radius: 10px;
-  background-color: rgb(243, 229, 167);
+  background-color: #E8C07D;
 }
 .intro p {
   width: 70%;
@@ -241,59 +241,61 @@ section h3 {
   text-align: center;
 }
 .grid-container .text {
-  position: absolute;
-  visibility: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
+  transition: 0.5s;
 }
 .grid-container .text h4 {
   font-size: 50px;
   font-family: "Ephesis", cursive;
   color: white;
-  margin-top: 60px;
 }
 .grid-container .text article {
   font-size: 20px;
   font-family: "Raleway", sans-serif;
   color: white;
-  margin-top: 20px;
-}
-.grid-container :hover .text {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100%;
-  bottom: 0px;
-  visibility: visible;
-  opacity: 1;
 }
 .grid-container .card1, .grid-container .card4, .grid-container .card3, .grid-container .card2 {
   grid-area: card1;
   width: 300px;
   height: 400px;
   margin: 0 auto 0 auto;
-  position: relative;
-}
-.grid-container .card1 img, .grid-container .card4 img, .grid-container .card3 img, .grid-container .card2 img {
-  width: 300px;
-  height: 400px;
+  background-image: url(../assets/tienda/marmellata6.jpg);
+  background-size: cover;
   border-radius: 10px;
   box-shadow: 0px 5px 8px black;
 }
-.grid-container .card1 :hover, .grid-container .card4 :hover, .grid-container .card3 :hover, .grid-container .card2 :hover {
+.grid-container .card1:hover .text, .grid-container .card4:hover .text, .grid-container .card3:hover .text, .grid-container .card2:hover .text {
+  opacity: 1;
   cursor: pointer;
 }
 .grid-container .card2 {
   grid-area: card2;
+  background-image: url(../assets/tienda/jugo.jpg);
 }
 .grid-container .card3 {
   grid-area: card3;
+  background-image: url(../assets/tienda/yogur.jpg);
 }
 .grid-container .card4 {
   grid-area: card4;
+  background-image: url(../assets/tienda/miele2.jpg);
 }
 
 .familia {
   margin-top: 50px;
 }
-.familia img, .familia picture {
+.familia img,
+.familia picture {
   box-shadow: 0px 4px 5px black;
   border-radius: 10px;
 }
@@ -304,7 +306,7 @@ section h3 {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 3px solid #0db3c9;
+  border: 3px solid;
   width: 90%;
   margin: 40px auto 40px auto;
 }
@@ -326,9 +328,9 @@ section h3 {
   text-align: center;
 }
 .familia article p:last-child {
+  margin-top: 20px;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
-  margin-top: 20px;
   text-align: center;
 }
 .familia .modulo {
@@ -362,26 +364,27 @@ section h3 {
   justify-content: space-evenly;
   text-align: center;
 }
-.button ul :hover {
+.button ul:hover {
   cursor: pointer;
 }
 .button li {
-  border-radius: 10px;
-  width: 22%;
-  height: 80px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  width: 22%;
+  height: 80px;
   align-content: center;
-  background-color: rgba(220, 20, 60, 0.555);
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid #E8C07D;
 }
 .button a {
   font-size: 20px;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
-  color: black;
+  color: white;
 }
 
 .parallax1 {
@@ -497,7 +500,7 @@ section h3 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
-.form-container :nth-child(4) {
+.form-container:nth-child(4) {
   margin-top: 40px;
 }
 .form-container .check {
@@ -535,7 +538,7 @@ section h3 {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #CC704B;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -564,7 +567,7 @@ footer a {
 
 /* tablet */
 @media (min-width: 500px) and (max-width: 900px) {
-  .cursor :hover {
+  .cursor:hover {
     display: none;
   }
   section h1 {
@@ -574,7 +577,7 @@ footer a {
     font-size: 50px;
     margin-top: 0px;
   }
-  .menu1 ul :hover {
+  .menu1 ul:hover {
     cursor: none;
     transform: scale(0);
   }
@@ -597,58 +600,39 @@ footer a {
     margin: 0 auto;
   }
   .grid-container {
-    margin-top: 0px;
+    margin-top: -100px;
+    margin-bottom: 150px;
     grid-template-columns: 400px;
     grid-template-rows: repeat(4, 700px);
     grid-template-areas: "card1" "card2" "card3" "card4";
   }
-  .grid-container .card1,
-  .grid-container .card2,
-  .grid-container .card3,
-  .grid-container .card4 {
-    position: static;
-    height: 650px;
+  .grid-container .text {
+    height: 230px;
+    margin-top: 410px;
+    opacity: 1;
   }
   .grid-container .card1:hover, .grid-container .card2:hover, .grid-container .card3:hover, .grid-container .card4:hover {
-    display: none;
     cursor: none;
-  }
-  .grid-container :hover .text {
     display: none;
-    cursor: none;
-  }
-  .grid-container .text {
-    position: static;
-    visibility: visible;
-    opacity: 1;
-    text-align: center;
-  }
-  .grid-container .text h4,
-  .grid-container .text article {
-    color: black;
-    margin-top: 10px;
   }
   article {
     text-align: center;
-  }
-  .button ul:hover {
-    display: none;
-    cursor: none;
   }
   .button ul {
     height: 100px;
     margin-top: 10px;
   }
+  .button ul:hover {
+    display: none;
+    cursor: none;
+  }
   .button li {
-    background: none;
-    border: 1.5px solid rgb(243, 229, 167);
+    border: 2px;
     width: 22%;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.8);
   }
   .button a {
     font-size: 16px;
-    color: white;
     font-weight: lighter;
   }
   .parallax1,
@@ -702,8 +686,23 @@ footer a {
   .nav-bar .link2, .nav-bar .link1 {
     margin-right: 10px;
   }
-  .nav-bar .cursor :hover {
+  .nav-bar .cursor:hover {
     display: none;
+  }
+  .menu {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30%;
+    top: 95px;
+    left: 0;
+    background-color: black;
+  }
+  .menu a {
+    font-size: 20px;
+  }
+  .menu a:hover {
+    text-decoration: none;
   }
   .social-media {
     padding: 0px;
@@ -723,8 +722,7 @@ footer a {
     letter-spacing: 5px;
     margin-top: -15px;
   }
-  .menu1 ul :hover {
-    cursor: none;
+  .menu1 ul:hover {
     transform: scale(0);
   }
   .img-home {
@@ -751,7 +749,7 @@ footer a {
     font-family: "Raleway", sans-serif;
     color: black;
     text-align: center;
-    background-color: rgb(243, 229, 167);
+    background-color: #E8C07D;
     border-radius: 45px;
     width: 200px;
     margin: 5px auto 0 auto;
@@ -764,36 +762,20 @@ footer a {
     font-size: 18px;
   }
   .grid-container {
-    margin-top: 0px;
+    margin-top: -130px;
+    margin-bottom: 150px;
     grid-template-columns: 400px;
     grid-template-rows: repeat(4, 700px);
     grid-template-areas: "card1" "card2" "card3" "card4";
   }
-  .grid-container .card1,
-  .grid-container .card2,
-  .grid-container .card3,
-  .grid-container .card4 {
-    position: static;
-    height: 650px;
+  .grid-container .text {
+    height: 230px;
+    margin-top: 410px;
+    opacity: 1;
   }
   .grid-container .card1:hover, .grid-container .card2:hover, .grid-container .card3:hover, .grid-container .card4:hover {
-    display: none;
     cursor: none;
-  }
-  .grid-container :hover .text {
     display: none;
-    cursor: none;
-  }
-  .grid-container .text {
-    position: static;
-    visibility: visible;
-    opacity: 1;
-    text-align: center;
-  }
-  .grid-container .text h4,
-  .grid-container .text article {
-    color: black;
-    margin-top: 10px;
   }
   .title-pages h1 {
     font-size: 70px;
@@ -831,24 +813,17 @@ footer a {
     font-size: 20px;
     margin-top: 10px;
   }
-  .button ul:hover {
-    display: none;
-    cursor: none;
-  }
   .button ul {
     height: 70px;
     margin-top: 10px;
   }
   .button li {
-    background: none;
-    border: 1px solid rgb(243, 229, 167);
+    border: 1px solid #E8C07D;
     width: 25%;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.8);
   }
   .button a {
-    font-size: 11px;
-    color: white;
+    font-size: 12px;
     font-weight: lighter;
   }
   .parallax1,
@@ -868,7 +843,7 @@ footer a {
     margin: 0 auto;
     width: 80%;
     font-size: 25px;
-    height: 350px;
+    height: 100%;
   }
   .form-container {
     margin-top: 20px;
@@ -877,10 +852,11 @@ footer a {
     width: 250px;
   }
   .form-container textarea {
-    width: 320px;
+    width: 300px;
     height: 150px;
   }
   .google-maps {
+    width: 320px;
     height: 200px;
     margin-bottom: 30px;
   }
