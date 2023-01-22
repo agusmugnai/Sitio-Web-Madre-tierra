@@ -680,9 +680,6 @@ footer a {
 }
 /* mobile */
 @media (min-width: 200px) and (max-width: 500px) {
-  .cursor:hover {
-    display: none;
-  }
   .nav-bar {
     padding: 5px 5px 0 5px;
   }
@@ -691,6 +688,7 @@ footer a {
   }
   .nav-bar .cursor:hover {
     display: none;
+    cursor: none;
   }
   .menu {
     flex-direction: column;

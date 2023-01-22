@@ -156,9 +156,6 @@ opacity: 1;
 
 /* mobile */
 @media (min-width: 200px) and (max-width: 500px) {
-    .cursor:hover{
-        display: none;
-    }
     .nav-bar {
         padding: 5px 5px 0 5px;
 
@@ -168,6 +165,7 @@ opacity: 1;
 
         .cursor:hover {
             display: none;
+            cursor: none;
         }
     }
 
