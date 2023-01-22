@@ -680,15 +680,15 @@ footer a {
 }
 /* mobile */
 @media (min-width: 200px) and (max-width: 500px) {
+  .cursor:hover {
+    border-radius: 0;
+    box-shadow: none;
+  }
   .nav-bar {
     padding: 5px 5px 0 5px;
   }
   .nav-bar .link2, .nav-bar .link1 {
     margin-right: 10px;
-  }
-  .nav-bar .cursor:hover {
-    display: none;
-    cursor: none;
   }
   .menu {
     flex-direction: column;
@@ -775,6 +775,8 @@ footer a {
     opacity: 1;
   }
   .grid-container .text h4 {
+    letter-spacing: 5px;
+    text-decoration: underline 1px solid #E8C07D;
     font-weight: lighter;
   }
   .grid-container .card1:hover, .grid-container .card2:hover, .grid-container .card3:hover, .grid-container .card4:hover {

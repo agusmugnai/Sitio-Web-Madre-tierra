@@ -156,17 +156,19 @@ opacity: 1;
 
 /* mobile */
 @media (min-width: 200px) and (max-width: 500px) {
+    .cursor:hover {
+            border-radius: 0;
+            box-shadow: none;
+        }
     .nav-bar {
         padding: 5px 5px 0 5px;
+        
 
         .link2 {
             margin-right: 10px;
         }
 
-        .cursor:hover {
-            display: none;
-            cursor: none;
-        }
+        
     }
 
     .menu {
@@ -276,6 +278,8 @@ opacity: 1;
                 margin-top:410px;
                 opacity: 1;
                 h4{
+                   letter-spacing: 5px;
+                   text-decoration: underline 1px solid map-get($map: $color, $key: "crem");
                     font-weight: lighter;
                 }
                 }
