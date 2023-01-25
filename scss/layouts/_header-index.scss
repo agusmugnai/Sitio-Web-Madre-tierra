@@ -26,12 +26,6 @@ header {
     }
 }
 
-.cursor:hover {
-    border-radius: 5px;
-    box-shadow: 3px 3px 8px map-get($map: $color, $key: "nero");
-}
-
-
 .social-media {
     @include flex;
     justify-content: flex-end;

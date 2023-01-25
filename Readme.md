@@ -1,20 +1,6 @@
-[![logo.png](https://i.postimg.cc/907Tx4Lm/logo.png)](https://postimg.cc/4HXmy3Cq)
-[Web Madre tierra](http://https://github.com/agusmugnai/proyecto-madre-tierra "Madre tierra")
-# Madre tierra
----
-#### Repositorio del proyecto realizado para el curso de Desarrollo Web, impartido por Coderhouse.
----
-##Herramientas 
--HTML
--SASS
--CSS
--Affinity Designer
--Node.js
+<p align="center"><a href='https://agusmugnai.github.io/proyecto-madre-tierra/' target='_blank'><img src='https://i.postimg.cc/X7g16rqM/logo126x126.png' border='0' alt='logo126x126'/></a></p>
 
-##Paleta de colores
-https://colorhunt.co/palette/9fc088e8c07dcc704b614124
-
-##Tipografías utililzadas
-https://fonts.google.com/specimen/Raleway
-https://fonts.google.com/specimen/Ephesis
-
+<p align="center">[![procesadores.png](https://i.postimg.cc/ZnZDkf7r/procesadores.png)](https://postimg.cc/2bcxhxf6)<p/>
+<p align="center"> [![programar.png](https://i.postimg.cc/8cp9fp8F/programar.png)](https://postimg.cc/TLsCZX3G)<p/>
+<p align="center">[![editoresimg.png](https://i.postimg.cc/XNwGLnRZ/editoresimg.png)](https://postimg.cc/rzwwF2Fc)<p/>
+<p align="center">[![paleta-Colores.png](https://i.postimg.cc/BQz8pNS6/paleta-Colores.png)](https://postimg.cc/HVQssw7D)<p/>

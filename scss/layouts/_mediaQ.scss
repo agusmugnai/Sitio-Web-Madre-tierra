@@ -1,9 +1,5 @@
 /* tablet */
 @media (min-width: 500px) and (max-width: 900px) {
-    .cursor:hover {
-        display: none;
-    }
-
     section {
         h1 {
             font-size: 160px;
@@ -57,15 +53,17 @@
             "card2"
             "card3"
             "card4";
-.text{
-height: 230px;
-margin-top:410px;
-opacity: 1;
-}
-.card1:hover{
-    cursor: none;
-    display: none;
-}
+
+        .text {
+            height: 230px;
+            margin-top: 410px;
+            opacity: 1;
+        }
+
+        .card1:hover {
+            cursor: none;
+            display: none;
+        }
 
     }
 
@@ -142,7 +140,7 @@ opacity: 1;
 
         a {
             font-size: 20px;
-            color:map-get($map: $color, $key: "bianco");
+            color: map-get($map: $color, $key: "bianco");
         }
 
     }
@@ -156,19 +154,15 @@ opacity: 1;
 
 /* mobile */
 @media (min-width: 200px) and (max-width: 500px) {
-    .cursor:hover {
-            border-radius: 0;
-            box-shadow: none;
-        }
     .nav-bar {
         padding: 5px 5px 0 5px;
-        
+
 
         .link2 {
             margin-right: 10px;
         }
 
-        
+
     }
 
     .menu {
@@ -203,6 +197,8 @@ opacity: 1;
         h1 {
             font-size: 70px;
             text-decoration: underline 1px double map-get($map: $color, $key: "nero");
+            font-weight: lighter;
+            letter-spacing: 3px;
         }
 
         h3 {
@@ -242,16 +238,17 @@ opacity: 1;
             color: map-get($map: $color, $key: "nero");
             text-align: center;
             background-color: map-get($map: $color, $key: "crem");
-            border-radius: 45px;
+            box-shadow: inset 0px -4px 5px map-get($map: $color, $key: "terracotta");
+            border-radius: 10px;
             width: 200px;
-            margin: 5px auto 0 auto;
-            border: 1px solid;
+            margin: 10px auto 0 auto;
         }
 
     }
 
     .menu1 {
         display: none;
+
     }
 
     footer {
@@ -273,20 +270,25 @@ opacity: 1;
             "card4";
 
 
-            .text{
-                height: 230px;
-                margin-top:410px;
-                opacity: 1;
-                h4{
-                   letter-spacing: 5px;
-                   text-decoration: underline 1px solid map-get($map: $color, $key: "crem");
-                    font-weight: lighter;
-                }
-                }
-                .card1:hover{
-                    cursor: none;
-                    display: none;
-                }
+        .text {
+            height: 230px;
+            margin-top: 410px;
+            opacity: 1;
+            background: none;
+
+            h4 {
+                font-size: 50px;
+                letter-spacing: 5px;
+                text-decoration: underline 1px solid map-get($map: $color, $key: "crem");
+                font-weight: lighter;
+                color: map-get($map: $color, $key: "nero");
+            }
+
+            article {
+                color: map-get($map: $color, $key: "nero");
+            }
+        }
+
     }
 
     .title-pages {
@@ -313,8 +315,14 @@ opacity: 1;
     }
 
     .intro {
+        width: 90%;
         height: 100%;
-        margin: 0px auto 20px auto;
+        margin: 20px auto 20px auto;
+        border-radius: 10px;
+
+        p {
+            width: 85%;
+        }
     }
 
     .familia {
@@ -340,6 +348,9 @@ opacity: 1;
             margin-top: 10px;
         }
     }
+    .art article{
+        width: 90%;
+    }
 
     .button {
         ul {
@@ -348,15 +359,17 @@ opacity: 1;
         }
 
         li {
-            border: 1px solid map-get($map: $color, $key: "crem");
+            border: 1px solid map-get($map: $color, $key: "terracotta");
             width: 25%;
             height: 60px;
 
+            &:hover {
+                box-shadow: none;
+            }
         }
 
         a {
             font-size: 12px;
-            font-weight: lighter;
         }
 
     }
@@ -365,21 +378,21 @@ opacity: 1;
     .parallax2,
     .parallax3,
     .parallax4 {
-       display: none;
+        display: none;
     }
 
     .art-evento {
         display: block;
         text-align: center;
         height: auto;
-        margin: 30px auto 40px auto;
+        margin: 10px auto 40px auto;
 
         article {
             display: block;
-            margin: 0 auto;
+            margin: 0 auto 15px auto;
             width: 80%;
             font-size: 25px;
-            height:100%;
+            height: 100%;
         }
     }
 

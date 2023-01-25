@@ -1,5 +1,5 @@
 .familia {
-    margin-top: 50px;
+    margin-top: 30px;
 
     img,
     picture {
@@ -10,22 +10,21 @@
 
     .art {
         @include flex;
-        background-color: map-get($map: $color, $key: "opacity");
-        border: 3px solid map-get($map: $color, $key: "terracota");
+        background-color: map-get($map: $color, $key: "crem");
+        border: 3px solid map-get($map: $color, $key: "terracotta");
         width: 90%;
-        margin: 40px auto 40px auto;
+        margin: 30px auto;
 
 
     }
 
     article {
-
         font-size: 20px;
         font-family: $secondary-font;
         width: 80%;
         height: 100%;
         padding: 20px 10px;
-        color: map-get($map: $color, $key: "bianco");
+        color: map-get($map: $color, $key: "nero");
 
         br {
             margin-bottom: 20px;
@@ -50,7 +49,7 @@
     .modulo {
         @include flex;
         align-items: flex-end;
-        gap: 80px;
+        gap: 50px;
         text-align: center;
 
         p {
