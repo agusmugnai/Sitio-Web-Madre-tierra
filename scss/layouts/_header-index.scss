@@ -1,36 +1,40 @@
 header {
-    background-color: map-get($map: $color, $key: "verde");
+    box-shadow: inset 0px -3px 5px map-get($map: $color, $key: "bianco");
+    background-color:map-get($map: $color, $key: "verde") ;
+    
 }
 
 .img-home {
     display: none;
 }
 
+
 .nav-bar {
     @include flex;
     justify-content: space-between;
-    padding: 20px 20px 0 20px;
+    height: 72px;
+    padding: 6px 20px 0 20px;
     margin-bottom: 0;
 
+    .link1 {
+        @include flex;
+        gap: 15px;
+    }
 
     .link2 {
         @include flex;
-        gap: 20px;
-        margin-right: 50px;
+        gap: 60px;
+        
+        .social-media {
+            @include flex;
+            gap: 20px;
 
+        }
+
+        .icons {
+            @include flex;
+            gap: 20px;
+            margin-right: 15px;
+        }
     }
-
-    .link1 {
-        @extend .link2;
-
-    }
-}
-
-.social-media {
-    @include flex;
-    justify-content: flex-end;
-    gap: 20px;
-    padding: 15px 50px 10px 0;
-
-
 }

@@ -1,3 +1,8 @@
+.fondo{
+    background-image: url(../assets/fondos/fondocielo.jpg);
+    background-size: cover;
+    
+}
 section {
 
     h1 {
@@ -24,9 +29,15 @@ section {
         justify-content: space-around;
     }
 
-    li:hover {
-        transform: scale(1.2);
-        text-decoration: underline 1px solid map-get($map: $color, $key: "nero");
+    li {
+        @include flex;
+        @include button;
+        width: 260px;
+        height: 43px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     a {
@@ -34,7 +45,6 @@ section {
         font-weight: bolder;
         color: map-get($map: $color, $key: "nero");
         font-size: 30px;
-
     }
 
 

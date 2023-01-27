@@ -16,6 +16,7 @@ a {
 }
 
 header {
+  box-shadow: inset 0px -3px 5px white;
   background-color: #9FC088;
 }
 
@@ -30,27 +31,42 @@ header {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px 0 20px;
+  height: 72px;
+  padding: 6px 20px 0 20px;
   margin-bottom: 0;
 }
-.nav-bar .link2, .nav-bar .link1 {
+.nav-bar .link1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  margin-right: 50px;
+  gap: 15px;
 }
-.social-media {
+.nav-bar .link2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  justify-content: flex-end;
+  gap: 60px;
+}
+.nav-bar .link2 .social-media {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  padding: 15px 50px 10px 0;
+}
+.nav-bar .link2 .icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-right: 15px;
 }
 
 .menu a:hover {
@@ -64,15 +80,15 @@ header {
   justify-content: center;
   align-items: center;
   justify-content: space-evenly;
-  width: 80%;
+  width: 100%;
   height: 10%;
   position: fixed;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.8);
-  top: 80px;
-  left: 80px;
+  top: 68px;
+  left: 0px;
   z-index: 1;
   text-align: center;
 }
@@ -151,6 +167,11 @@ hr {
   width: 130px;
 }
 
+.fondo {
+  background-image: url(../assets/fondos/fondocielo.jpg);
+  background-size: cover;
+}
+
 section h1 {
   font-family: "Ephesis", cursive;
   font-size: 270px;
@@ -175,9 +196,21 @@ section h3 {
   height: 200px;
   justify-content: space-around;
 }
+.menu1 li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #9FC088;
+  box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.8), inset 5px 5px 2px white;
+  width: 260px;
+  height: 43px;
+}
 .menu1 li:hover {
-  transform: scale(1.2);
-  text-decoration: underline 1px solid black;
+  transform: scale(1.1);
 }
 .menu1 a {
   font-family: "Raleway", sans-serif;
@@ -187,6 +220,7 @@ section h3 {
 }
 
 .title-pages h1 {
+  margin-top: 30px;
   text-align: center;
   height: 200px;
   font-size: 150px;
@@ -341,6 +375,9 @@ section h3 {
   font-family: "Ephesis", cursive;
   color: black;
 }
+.familia .modulo .pie-foto {
+  color: white;
+}
 .familia .bloque {
   display: block;
 }
@@ -373,7 +410,7 @@ section h3 {
   background: #E8C07D;
 }
 .button li:hover {
-  box-shadow: inset 0px -7px 5px #CC704B;
+  box-shadow: inset -3px -3px 2px white, inset 3px 3px 15px white;
 }
 .button a {
   font-size: 22px;
@@ -384,7 +421,7 @@ section h3 {
 
 .parallax1 {
   background-image: url(../assets/eventos/miel-parallax.jpg);
-  height: 250px;
+  height: 200px;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -394,7 +431,7 @@ section h3 {
 
 .parallax2 {
   background-image: url(../assets/eventos/mermelada-parallax.jpg);
-  height: 250px;
+  height: 200px;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -404,7 +441,7 @@ section h3 {
 
 .parallax3 {
   background-image: url(../assets/eventos/veg-parallax.jpg);
-  height: 250px;
+  height: 200px;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -414,7 +451,7 @@ section h3 {
 
 .parallax4 {
   background-image: url(../assets/eventos/ecology-parallax.jpg);
-  height: 250px;
+  height: 200px;
   width: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -521,24 +558,31 @@ section h3 {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  gap: 25px;
 }
 .form-container .form-buttons input {
+  text-align: center;
+  border-radius: 30px;
+  background-color: #9FC088;
+  box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.8), inset 5px 5px 2px white;
   width: 150px;
   height: 30px;
   font-size: 15px;
   font-family: "Raleway", sans-serif;
-  border-radius: 30px;
-  background: none;
-  border: 1px solid black;
+}
+.form-container .form-buttons input:hover {
+  cursor: pointer;
 }
 
 footer {
-  background-color: #CC704B;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 68px;
+  background-color: #CC704B;
+  box-shadow: inset 0px 3px 5px white;
 }
 footer .address {
   font-family: "Raleway", sans-serif;
@@ -672,18 +716,18 @@ footer a {
 }
 /* mobile */
 @media (min-width: 200px) and (max-width: 500px) {
+  .fondo {
+    background-size: auto;
+  }
   .nav-bar {
     padding: 5px 5px 0 5px;
-  }
-  .nav-bar .link2, .nav-bar .link1 {
-    margin-right: 10px;
   }
   .menu {
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
     height: 30%;
-    top: 95px;
+    top: 72px;
     left: 0;
     background-color: black;
   }
@@ -693,13 +737,9 @@ footer a {
   .menu a:hover {
     text-decoration: none;
   }
-  .social-media {
-    padding: 0px;
-    padding-bottom: 10px;
-    justify-content: center;
-  }
-  hr {
-    display: none;
+  .social-media img {
+    width: 18px;
+    height: 18px;
   }
   section h1 {
     font-size: 70px;
@@ -712,9 +752,6 @@ footer a {
     margin-top: 0px;
     letter-spacing: 5px;
     margin-top: -15px;
-  }
-  .menu1 ul:hover {
-    transform: scale(0);
   }
   .img-home {
     display: flex;
@@ -741,7 +778,7 @@ footer a {
     color: black;
     text-align: center;
     background-color: #E8C07D;
-    box-shadow: inset 0px -4px 5px #CC704B;
+    box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.8), inset 4px 4px 4px white;
     border-radius: 10px;
     width: 200px;
     margin: 10px auto 0 auto;
@@ -808,6 +845,9 @@ footer a {
   .familia .modulo p {
     font-size: 25px;
   }
+  .familia .modulo .pie-foto {
+    color: black;
+  }
   .familia article p:nth-child(3) {
     font-size: 35px;
     margin-top: 20px;
@@ -843,14 +883,16 @@ footer a {
   .art-evento {
     display: block;
     text-align: center;
-    height: auto;
+    height: 100%;
     margin: 10px auto 40px auto;
   }
   .art-evento article {
     display: block;
+    text-align: start;
     margin: 0 auto 15px auto;
     width: 80%;
-    font-size: 25px;
+    font-size: 30px;
+    letter-spacing: 2.5px;
     height: 100%;
   }
   .form-container {

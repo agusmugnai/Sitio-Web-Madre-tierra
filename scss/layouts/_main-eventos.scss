@@ -22,7 +22,8 @@
         align-content: center;
         background: map-get($map: $color, $key: "crem"); 
         &:hover{
-            box-shadow: inset 0px -7px 5px map-get($map: $color, $key: "terracotta");
+            box-shadow: inset -3px -3px 2px map-get($map: $color, $key: "bianco"),
+            inset 3px 3px 15px map-get($map: $color, $key: "bianco");
         } 
          
     }

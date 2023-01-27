@@ -3,7 +3,7 @@
     gap: 80px;
     margin-top: 60px;
     background: none;
-   
+
     input {
         @include flex;
         margin: auto auto 15px auto;
@@ -59,16 +59,20 @@
     .form-buttons {
         @include flex;
         margin-top: 30px;
+        gap: 25px;
 
         input {
+            @include button;
             width: 150px;
             height: 30px;
             font-size: 15px;
             font-family: $secondary-font;
-            border-radius: 30px;
-            background: none;
-            border: 1px solid map-get($map: $color, $key: "nero");
+
+            &:hover {
+                cursor: pointer;
+            }
+
         }
     }
-    
+
 }

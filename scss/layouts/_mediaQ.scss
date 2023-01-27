@@ -154,15 +154,11 @@
 
 /* mobile */
 @media (min-width: 200px) and (max-width: 500px) {
+   .fondo{
+    background-size: auto;
+   }
     .nav-bar {
         padding: 5px 5px 0 5px;
-
-
-        .link2 {
-            margin-right: 10px;
-        }
-
-
     }
 
     .menu {
@@ -170,7 +166,7 @@
         justify-content: space-evenly;
         width: 100%;
         height: 30%;
-        top: 95px;
+        top: 72px;
         left: 0;
         background-color: map-get($map: $color, $key: "nero");
 
@@ -183,15 +179,11 @@
         }
     }
 
-    .social-media {
-        padding: 0px;
-        padding-bottom: 10px;
-        justify-content: center;
+   .social-media img {
+            width: 18px;
+            height: 18px;   
     }
 
-    hr {
-        display: none;
-    }
 
     section {
         h1 {
@@ -207,11 +199,6 @@
             letter-spacing: 5px;
             margin-top: -15px;
         }
-    }
-
-    .menu1 ul:hover {
-        transform: scale(0);
-
     }
 
     .img-home {
@@ -238,17 +225,16 @@
             color: map-get($map: $color, $key: "nero");
             text-align: center;
             background-color: map-get($map: $color, $key: "crem");
-            box-shadow: inset 0px -4px 5px map-get($map: $color, $key: "terracotta");
+            box-shadow: inset -4px -4px 4px map-get($map: $color, $key: "opacity"),
+                inset 4px 4px 4px map-get($map: $color, $key: "bianco");
             border-radius: 10px;
             width: 200px;
             margin: 10px auto 0 auto;
         }
-
     }
 
     .menu1 {
         display: none;
-
     }
 
     footer {
@@ -334,6 +320,9 @@
             p {
                 font-size: 25px;
             }
+            .pie-foto{
+                color: map-get($map: $color, $key: "nero");
+            }
         }
     }
 
@@ -348,7 +337,8 @@
             margin-top: 10px;
         }
     }
-    .art article{
+
+    .art article {
         width: 90%;
     }
 
@@ -384,14 +374,16 @@
     .art-evento {
         display: block;
         text-align: center;
-        height: auto;
+        height: 100%;
         margin: 10px auto 40px auto;
 
         article {
             display: block;
+            text-align: start;
             margin: 0 auto 15px auto;
             width: 80%;
-            font-size: 25px;
+            font-size: 30px;
+            letter-spacing: 2.5px;
             height: 100%;
         }
     }

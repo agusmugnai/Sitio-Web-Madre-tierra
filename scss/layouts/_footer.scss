@@ -1,11 +1,14 @@
 footer {
-   background-color: map-get($map: $color, $key: "terracotta"); 
     @include flex;
-   
+    height: 68px;
+    background-color: map-get($map: $color, $key: "terracotta");
+    box-shadow: inset 0px 3px 5px map-get($map: $color, $key: "bianco");
+
+
     .address {
         font-family: $secondary-font;
         font-size: 25px;
-        color:map-get($map: $color, $key: "bianco");
+        color: map-get($map: $color, $key: "bianco");
     }
 
     ul {
