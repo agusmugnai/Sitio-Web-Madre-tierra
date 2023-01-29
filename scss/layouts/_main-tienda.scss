@@ -21,9 +21,10 @@
 .intro {
     @include flex;
     margin: 30px auto;
-    width: 100%;
+    width: 90%;
     height: 250px;
     background-color: map-get($map: $color, $key: "crem");
+    border: 1px solid map-get($map: $color, $key: "terracotta");
 
     p {
         width: 70%;

@@ -1,5 +1,9 @@
 /* tablet */
 @media (min-width: 500px) and (max-width: 900px) {
+    .fondo {
+        background-size: auto;
+    }
+
     section {
         h1 {
             font-size: 160px;
@@ -91,31 +95,34 @@
 
         a {
             font-size: 16px;
-            font-weight: lighter;
 
         }
 
+    }
+
+    .btn-active {
+        text-decoration: underline 1px;
     }
 
     .parallax1,
     .parallax2,
     .parallax3,
     .parallax4 {
-        height: 150px;
+        height: 120px;
     }
 
     .art-evento {
         display: block;
         text-align: center;
-        height: auto;
+        height: 100%;
         margin: 30px auto;
 
         article {
             display: block;
             margin: 0 auto;
             width: 80%;
+            height: 100%;
             font-size: 40px;
-            height: 400px;
         }
     }
 
@@ -133,16 +140,16 @@
     }
 
     .menu {
-        width: 100%;
-        left: 0;
-        top: 120px;
         height: 40px;
 
         a {
             font-size: 20px;
-            color: map-get($map: $color, $key: "bianco");
         }
 
+    }
+
+    .familia .modulo .pie-foto {
+        color: map-get($map: $color, $key: "nero");
     }
 
     footer {
@@ -154,9 +161,10 @@
 
 /* mobile */
 @media (min-width: 200px) and (max-width: 500px) {
-   .fondo{
-    background-size: auto;
-   }
+    .fondo {
+        background-size: auto;
+    }
+
     .nav-bar {
         padding: 5px 5px 0 5px;
     }
@@ -179,9 +187,9 @@
         }
     }
 
-   .social-media img {
-            width: 18px;
-            height: 18px;   
+    .social-media img {
+        width: 18px;
+        height: 18px;
     }
 
 
@@ -237,13 +245,6 @@
         display: none;
     }
 
-    footer {
-        .address {
-            font-size: 18px;
-        }
-
-    }
-
     .grid-container {
         margin-top: -130px;
         margin-bottom: 150px;
@@ -265,7 +266,7 @@
             h4 {
                 font-size: 50px;
                 letter-spacing: 5px;
-                text-decoration: underline 1px solid map-get($map: $color, $key: "crem");
+                text-decoration: underline 2px solid map-get($map: $color, $key: "crem");
                 font-weight: lighter;
                 color: map-get($map: $color, $key: "nero");
             }
@@ -304,7 +305,6 @@
         width: 90%;
         height: 100%;
         margin: 20px auto 20px auto;
-        border-radius: 10px;
 
         p {
             width: 85%;
@@ -320,7 +320,8 @@
             p {
                 font-size: 25px;
             }
-            .pie-foto{
+
+            .pie-foto {
                 color: map-get($map: $color, $key: "nero");
             }
         }
@@ -349,7 +350,8 @@
         }
 
         li {
-            border: 1px solid map-get($map: $color, $key: "terracotta");
+            @include button;
+            border-radius: 10px;
             width: 25%;
             height: 60px;
 
@@ -371,6 +373,10 @@
         display: none;
     }
 
+    .btn-active {
+        text-decoration: underline 1px;
+    }
+
     .art-evento {
         display: block;
         text-align: center;
@@ -382,9 +388,9 @@
             text-align: start;
             margin: 0 auto 15px auto;
             width: 80%;
-            font-size: 30px;
-            letter-spacing: 2.5px;
             height: 100%;
+            font-size: 30px;
+            letter-spacing: 2.5px; 
         }
     }
 
@@ -407,5 +413,10 @@
         margin-bottom: 30px;
     }
 
+    footer {
+        .address {
+            font-size: 18px;
+        }
 
+    }
 }

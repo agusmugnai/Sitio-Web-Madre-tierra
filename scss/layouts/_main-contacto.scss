@@ -1,11 +1,12 @@
 .form-container {
     @include flex;
     gap: 80px;
-    margin-top: 60px;
+    margin: 60px auto;
     background: none;
 
     input {
         @include flex;
+        background: none;
         margin: auto auto 15px auto;
         width: 350px;
         height: 50px;
@@ -29,7 +30,8 @@
         width: 350px;
         height: 150px;
         margin: 15px auto;
-        border: 1px solid map-get($map: $color, $key: "nero");
+        background-color: map-get($map: $color, $key: "crem");
+        border: 1px solid map-get($map: $color, $key: "terracotta");
         outline: none;
         font-size: 18px;
         font-family: $secondary-font;

@@ -82,5 +82,11 @@
     img {
         box-shadow: 0px 3px 5px map-get($map: $color, $key: "bianco");
     }
+    a{
+        text-decoration: underline;
+    }
 
+}
+.btn-active{
+    text-decoration: underline 3px solid map-get($map: $color, $key: "nero");
 }

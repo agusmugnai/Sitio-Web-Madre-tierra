@@ -24,9 +24,9 @@
 
 
 #### Para su realización se utilizaron códigos  mediante:
-<p align="center">[![procesadores.png](https://i.postimg.cc/ZnZDkf7r/procesadores.png)](https://postimg.cc/2bcxhxf6)<p/>
+<p align="center"><a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/ZnZDkf7r/procesadores.png" alt="procesadores"/></a><p/>
 #### Complementados con los siguientes programas:
-<p align="center"> [![programar.png](https://i.postimg.cc/8cp9fp8F/programar.png)](https://postimg.cc/TLsCZX3G)<p/>
+<p align="center"><a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/8cp9fp8F/programar.png" alt="programar"/></a><p/>
 
 ------------
 
@@ -34,17 +34,17 @@
 - Affinity Designer
 - Figma
 - Página web: https://www.iloveimg.com/resize-image
-<p align="center">[![editoresimg.png](https://i.postimg.cc/XNwGLnRZ/editoresimg.png)](https://postimg.cc/rzwwF2Fc)<p/>
+<p align="center"><a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/XNwGLnRZ/editoresimg.png" alt="editoresimg"/></a>)<p/>
 
 ------------
 
 ### Paleta de colores
-<p align="center">[![paleta-Colores.png](https://i.postimg.cc/BQz8pNS6/paleta-Colores.png)](https://postimg.cc/HVQssw7D)<p/>
+<p align="center"><a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/BQz8pNS6/paleta-Colores.png" alt="paleta-Colores"/></a><p/>
 
 ------------
 
 ###Tipografías aplicadas
-<p align="center"> [![type.png](https://i.postimg.cc/T13cGSYB/type.png)](https://postimg.cc/KkCTD0T5)<p/>
+<p align="center"><a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/T13cGSYB/type.png" alt="type"/></a><p/>
 
 ------------
 
@@ -54,7 +54,7 @@
 
 
 > #### Síguenos en nuestras redes
-<p align="center">[![redes.png](https://i.postimg.cc/zGYQr25G/redes.png)](https://postimg.cc/KRQf7NR6)<p/>
+<p align="center"><a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/zGYQr25G/redes.png" alt="redes"/></a><p/>
 
 ### Licencia
 MIT

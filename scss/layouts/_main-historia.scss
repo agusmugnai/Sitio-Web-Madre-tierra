@@ -11,7 +11,7 @@
     .art {
         @include flex;
         background-color: map-get($map: $color, $key: "crem");
-        border: 3px solid map-get($map: $color, $key: "terracotta");
+        border: 1px solid map-get($map: $color, $key: "terracotta");
         width: 90%;
         margin: 30px auto;
 
