@@ -57,9 +57,6 @@
             font-family: $principal-font;
             color: map-get($map: $color, $key: "nero");
         }
-        .pie-foto{
-        color:map-get($map: $color, $key: "bianco");
-        }
     }
 
     .bloque {

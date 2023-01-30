@@ -376,9 +376,6 @@ section h3 {
   font-family: "Ephesis", cursive;
   color: black;
 }
-.familia .modulo .pie-foto {
-  color: white;
-}
 .familia .bloque {
   display: block;
 }
@@ -404,14 +401,15 @@ section h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #E8C07D;
+  box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.8), inset 5px 5px 2px white;
   border-radius: 10px;
   width: 22%;
   height: 80px;
   align-content: center;
   background: #E8C07D;
-}
-.button li:hover {
-  box-shadow: inset -3px -3px 2px white, inset 3px 3px 15px white;
 }
 .button a {
   font-size: 22px;
