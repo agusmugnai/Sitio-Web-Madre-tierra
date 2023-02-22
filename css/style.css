@@ -168,8 +168,8 @@ hr {
 }
 
 .fondo {
-  background-image: url(../assets/fondos/fondocielo1.jpg);
-  background-size: cover;
+  background-color: #b3cdd1;
+  background-image: linear-gradient(315deg, #9fa4c4 0%, #b3cdd1 74%);
 }
 
 section h1 {
